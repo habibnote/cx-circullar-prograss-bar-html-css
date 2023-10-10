@@ -1,0 +1,111 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e3edf7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill{
+    width: 160px;
+    height: 160px;
+    /* background-color: orange; */
+    position: relative;
+    transform: rotate(-85deg);
+}
+.outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:160px;
+    width: 160px;
+    /* padding: 20px; */
+    border-radius: 50%;
+    background-color: #ef3e46;
+}
+.inner{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ffffff;
+}
+.all-text{
+    text-align: center;
+    transform: rotate(85deg);
+}
+.all-text .score{
+    font-size: 24px;
+    font-weight: bold;
+    color: #10183f; 
+    margin-bottom: 10px;   
+}
+.all-text .score span{
+    font-size: 18px;
+    font-weight: normal;
+}
+.all-text .avg-and-top{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.all-text .avg-and-top .avg{
+    font-size: 11px;
+    color: #10183f;
+    padding-right: 5px;
+    border-right: 1px solid #e7e8ec;
+}
+.all-text .avg-and-top .top{
+    padding-left: 5px;
+    font-size: 11px;
+}
+.all-text .avg-and-top .avg span,
+.all-text .avg-and-top .top span{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#first-one{
+    fill:none;
+    /* stroke: url(#GradientColor); */
+    stroke: #f68f4a;
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim 2s linear forwards;
+}
+
+#last-one{
+    fill:none;
+    /* stroke: url(#GradientColor); */
+    stroke: #6366f1;
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: animi 2s linear forwards;
+}
+
+@keyframes animi {
+    100%{
+        stroke-dashoffset: 252;
+    }
+}
+
+@keyframes anim {
+    100% {
+        stroke-dashoffset: 148.5;
+    }
+}
+
+svg{
+    position: absolute;
+    top:0;
+    left:0;
+}
